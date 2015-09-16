@@ -15,3 +15,9 @@ i.e.
      var db = fakedb;
 
 Note: Even if the db is fake, it will still try to post to tumblr.
+
+You can also try out dirTree.js with a quick built in test. Just run it from the command line with a file path:
+
+     node dirTree.js "E:\Screencaps"
+     
+It should print out all of the top level directories in that folder. (It does the print after making a chain of parent-child directories, but it only goes down 1 level.)
