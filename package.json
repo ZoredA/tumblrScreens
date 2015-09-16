@@ -1,0 +1,32 @@
+{
+  "name": "tumblr_screens",
+  "version": "1.0.0",
+  "description": "An image uploader that randomly picks an image to upload to tumblr.",
+  "main": "screenBot.js",
+  "dependencies": {
+    "tumblr.js": "^0.0.5",
+    "sqlite3": "^3.0.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZoredA/tumblrScreens.git"
+  },
+  "keywords": [
+    "tumblr",
+    "image",
+    "uploader",
+    "random",
+    "image",
+    "uploader"
+  ],
+  "author": "Zored Ahmer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZoredA/tumblrScreens/issues"
+  },
+  "homepage": "https://github.com/ZoredA/tumblrScreens#readme"
+}
