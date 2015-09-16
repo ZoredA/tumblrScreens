@@ -14,4 +14,4 @@ i.e.
      //var db = require('./dbWorks.js').db;
      var db = fakedb;
 
-Note: the db is fake, but it will still try to post to tumblr.
+Note: Even if the db is fake, it will still try to post to tumblr.
