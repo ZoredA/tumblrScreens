@@ -4,8 +4,9 @@
   "description": "An image uploader that randomly picks an image to upload to tumblr.",
   "main": "screenBot.js",
   "dependencies": {
-    "tumblr.js": "^0.0.5",
-    "sqlite3": "^3.0.10"
+    "random-js": "^1.0.5",
+    "sqlite3": "^3.0.10",
+    "tumblr.js": "^0.0.5"
   },
   "devDependencies": {},
   "scripts": {

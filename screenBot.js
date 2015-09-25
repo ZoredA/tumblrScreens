@@ -13,6 +13,7 @@ var path = require('path');
 var tumblr = require('tumblr.js');
 var tree = require('./dirTree.js').tree;
 var db = require('./dbWorks.js').db;
+var random = require('random-js')();
 
 //For debugging.
 var fakedb = {
@@ -108,9 +109,7 @@ var filteredDirWorker = function(dir, validFileList){
 			break;
 		}
 		//Pick a random entry.
-		//The + 0, -0 are obviously not necessary. Just making it clear this
-		//is a ranged random number.
-		var ranNum = Math.floor(Math.random() * (validFileList.length - 0) + 0);
+		var ranNum = random.integer(0,validFileList.length-1);
 		pickedFile = validFileList[ranNum];
 		pickedFilePath = path.resolve(path.join(dirName, pickedFile));
 		if (fs.lstatSync(pickedFilePath).isDirectory()){
