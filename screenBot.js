@@ -66,7 +66,7 @@ var inititialDirFilter = function(directory){
 		}
 		return fs.lstatSync(path.join(directory, value)).isDirectory();
 	});
-	return dirList;
+	return dirList.sort();
 }
 
 //This gets called with the directory AND a list of 
